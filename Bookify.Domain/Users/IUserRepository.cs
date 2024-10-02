@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bookify.Domain.Users
 {
-    internal interface IUserRepository
+    public interface IUserRepository
     {
         Task<User?> GetByIdAsync(Guid id, CancellationToken cancellation = default);
 

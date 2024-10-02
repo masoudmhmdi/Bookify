@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Bookify.Domain.Apartments
 {
-    internal interface IApartmentRepository
+    public interface IApartmentRepository
     {
-        Task<User?> GetByIdAsync(Guid id, CancellationToken cancellation = default);
+        Task<Apartment?> GetByIdAsync(Guid id, CancellationToken cancellation = default);
         void Add(User user);
     }
 }

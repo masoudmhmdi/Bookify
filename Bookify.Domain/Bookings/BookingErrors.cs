@@ -20,7 +20,7 @@ public static class BookingErrors
         "Booking.NotReserved",
         "The booking is not confirmed");
 
-    public static Error AlreadyStarted = new(
+    public static Error AlreadyStarted = new( 
         "Booking.AlreadyStarted",
         "The booking has already started");
-}
+}   

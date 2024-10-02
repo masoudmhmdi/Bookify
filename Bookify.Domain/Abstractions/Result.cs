@@ -39,7 +39,7 @@ namespace Bookify.Domain.Abstractions
         public static Result<TValue> Create<TValue>(TValue? value)
         {
             if(value != null)
-            {
+            {   
                 return Success(value);
             }
             else
